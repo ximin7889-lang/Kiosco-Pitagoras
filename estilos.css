@@ -1,0 +1,296 @@
+
+/* ================================= */
+/* ESTILO GENERAL */
+/* ================================= */
+
+body {
+    background: #f5f5e9;
+    color: #245b3c;
+    font-family: Georgia, serif;
+    text-align: center;
+    margin: 0;
+}
+
+/* TITULO PRINCIPAL */
+
+h1 {
+    background: #245b3c;
+    color: white;
+    padding: 25px;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+/* MENSAJE DE BIENVENIDA */
+
+body > p {
+    font-size: 18px;
+    color: #527653;
+    margin: 20px;
+}
+
+/* ================================= */
+/* BUSCADOR */
+/* ================================= */
+
+.buscador {
+    text-align: center;
+    margin: 25px;
+}
+
+.buscador input {
+    padding: 12px;
+    width: 250px;
+    font-size: 16px;
+    border: 1px solid #a5c98b;
+    border-radius: 8px;
+    outline: none;
+}
+
+.buscador input:focus {
+    border: 2px solid #245b3c;
+}
+
+.buscador button {
+    background-color: #245b3c;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buscador button:hover {
+    background-color: #6d9e55;
+}
+
+/* ================================= */
+/* DISTRIBUCIÓN DE LA TIENDA */
+/* ================================= */
+
+.contenido-tienda {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 230px;
+    gap: 30px;
+    width: 95%;
+    margin: 30px auto;
+    align-items: start;
+}
+
+/* PRODUCTOS A LA IZQUIERDA */
+
+.zona-productos {
+    min-width: 0;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 18px;
+    justify-items: center;
+    text-align: center;
+}
+
+/* ================================= */
+/* TARJETAS DE PRODUCTOS */
+/* ================================= */
+
+.tarjeta {
+    background: white;
+    border: 1px solid #c5d9b5;
+    border-radius: 12px;
+    padding: 12px;
+    width: 170px;
+    height: 270px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 13px rgba(0,0,0,0.15);
+}
+
+/* IMÁGENES */
+
+.tarjeta img {
+    width: 125px;
+    height: 125px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* NOMBRES DE PRODUCTOS */
+
+.tarjeta h3 {
+    color: #245b3c;
+    font-size: 15px;
+    margin: 8px 0;
+}
+
+/* PRECIOS */
+
+.tarjeta p {
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+/* BOTONES DE DISPONIBILIDAD */
+
+.tarjeta button {
+    border: none;
+    border-radius: 6px;
+    padding: 7px 13px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* PRODUCTO DISPONIBLE */
+
+.Disponible {
+    background-color: #d9efcf;
+    color: #28652e;
+}
+
+/* PRODUCTO AGOTADO */
+
+.Agotado {
+    background-color: #f5d6d6;
+    color: #a52a2a;
+}
+
+/* ================================= */
+/* PAGINACIÓN */
+/* ================================= */
+
+#paginacion {
+    text-align: center;
+    margin: 25px 0;
+    width: 100%;
+}
+
+#paginacion button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: 1px solid #a5c98b;
+    background-color: white;
+    color: #245b3c;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#paginacion button:hover {
+    background-color: #245b3c;
+    color: white;
+}
+
+/* ================================= */
+/* CATEGORÍAS A LA DERECHA */
+/* ================================= */
+
+.categorias {
+    background-color: white;
+    border: 1px solid #c5d9b5;
+    border-radius: 12px;
+    padding: 18px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+.categorias h3 {
+    color: #245b3c;
+    font-size: 20px;
+    border-bottom: 2px solid #a5c98b;
+    padding-bottom: 12px;
+}
+
+.categorias button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 11px;
+    background-color: #e8f0df;
+    color: #245b3c;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.categorias button:hover {
+    background-color: #245b3c;
+    color: white;
+}
+
+/* ================================= */
+/* PIE DE PÁGINA */
+/* ================================= */
+
+.pie-pagina {
+    background-color: #245b3c;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 35px;
+    border-radius: 12px 12px 0 0;
+}
+
+.pie-pagina h3 {
+    margin-bottom: 10px;
+}
+
+.pie-pagina p {
+    margin: 7px;
+}
+
+.pie-pagina small {
+    color: #d9e8d1;
+}
+
+/* ================================= */
+/* ADAPTACIÓN PARA CELULARES */
+/* ================================= */
+
+@media (max-width: 700px) {
+
+    .contenido-tienda {
+        grid-template-columns: 1fr;
+    }
+
+    .productos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .tarjeta {
+        width: 100%;
+        max-width: 170px;
+    }
+
+    .categorias {
+        width: 100%;
+    }
+
+    .buscador input {
+        width: 60%;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+}

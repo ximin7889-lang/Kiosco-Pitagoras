@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiosco Virtual</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1>Kiosco Virtual Pitágoras</h1>
+    <p>¡Conoce nuestros productos!</p>
+    <div class="mensaje-kiosco">
+    🛒 ¡Todo lo que necesitas para tu recreo!
+    <span>Buenos precios y variedad de productos escolares.</span>
+</div>
+
+    <div class="buscador">
+    <input type="text" id="buscar" oninput="buscarProducto()" placeholder="Buscar producto">
+    <button onclick="buscarProducto()">Buscar</button>
+    </div>
+
+<div class="contenido-tienda">
+
+    <!-- PRODUCTOS A LA IZQUIERDA -->
+    <div class="zona-productos">
+
+    <div class="productos">
+
+        <div class="tarjeta" data-categoria="Alimentos">
+            <img src="IMAGENES/SALCHIPAPA.JPG" height="150" width="150">
+            <h3>Papas fritas con hot dog</h3>
+            <p>Precio: S/ 2.50</p>
+        <button class="Disponible">Disponible</button>
+        </div>
+
+        <div class="tarjeta" data-categoria="bebidas">
+             <img src="IMAGENES/aguacielo.jpg" height="150" width="150">
+            <h3>Agua mineral</h3>
+            <p>Precio: S/ 1.50</p>
+             <button class="Disponible">Disponible</button>
+        </div>
+
+        <div class="tarjeta" data-categoria="snacks">
+             <img src="IMAGENES/GALLETACHIPS.jpg" height="150" width="150">
+            <h3>Galleta Chips</h3>
+            <p>Precio: S/ 1.00</p>
+      <button class="Agotado">Agotado</button>
+        </div>
+
+        <div class="tarjeta" data-categoria="utiles">
+            <img src="IMAGENES/cuaderno.jpg" height="150" width="150">
+            <h3>Cuaderno</h3>
+            <p>Precio: S/ 10.00</p>
+             <button class="Agotado">Agotado</button>
+                  </div>
+
+                  <div class="tarjeta" data-categoria="utiles">
+            <img src="IMAGENES/pl-.jpg" height="150" width="150">
+            <h3>Plumones</h3>
+            <p>Precio: S/ 10.00</p>
+             <button class="Agotado">Agotado</button>
+                  </div>
+
+
+        <div class="tarjeta" data-categoria="utiles">
+            <img src="IMAGENES/la.jpg" height="150" width="150">
+            <h3>Lápiz</h3>
+            <p>Precio: S/ 1.00</p>
+ <button class="Disponible">Disponible</button>
+        </div>
+<div class="tarjeta" data-categoria="utiles">
+            <img src="IMAGENES/car.jpg" height="150" width="150">
+            <h3>Cartulinas</h3>
+            <p>Precio: S/ 1.00</p>
+ <button class="Disponible">Disponible</button>
+        </div>
+
+        <div class="tarjeta" data-categoria="utiles">
+            <img src="IMAGENES/ho.jpg" height="150" width="150">
+            <h3>Hojas</h3>
+            <p>Precio: S/ 1.00</p>
+ <button class="Disponible">Disponible</button>
+        </div>
+
+        <div class="tarjeta" data-categoria="utiles">
+            <img src="IMAGENES/s.jpg" height="150" width="150">
+            <h3>Silicona</h3>
+            <p>Precio: S/ 5.00</p>
+ <button class="Disponible">Disponible</button>
+        </div>
+        <div class="tarjeta" data-categoria="utiles">
+            <img src="IMAGENES/borrador.jpg" height="150" width="150">
+            <h3>Borrador</h3>
+            <p>Precio: S/ 0.50</p>
+ <button class="Disponible">Disponible</button>
+        </div>
+
+         <div class="tarjeta" data-categoria="utiles">
+            <img src="IMAGENES/regla.jpg" height="150" width="150">
+            <h3>Regla</h3>
+            <p>Precio: S/ 1.50</p>
+             <button class="Disponible">Disponible</button>
+        </div>
+
+        <div class="tarjeta" data-categoria="bebidas">
+            <img src="IMAGENES/INKA.JPG" height="150" width="150">
+            <h3>Inka Kola</h3>
+            <p>Precio: S/ 3.00</p>
+             <button class="Disponible">Disponible</button>
+        </div>
+
+        <div class="tarjeta" data-categoria="bebidas">
+            <img src="IMAGENES/c.jpg" height="150" width="150">
+            <h3>Cifrut</h3>
+            <p>Precio: S/ 1.50</p>
+             <button class="Disponible">Disponible</button>
+        </div>
+
+        <div class="tarjeta" data-categoria="snacks">
+            <img src="IMAGENES/papa.jpg" height="150" width="150">
+            <h3>Inka Chips</h3>
+            <p>Precio: S/ 3.00</p>
+             <button class="Agotado">Agotado</button>
+        </div>
+
+        <div class="tarjeta" data-categoria="alimentos">
+            <img src="IMAGENES/hamburguesa.jpg" height="150" width="150">
+            <h3>Hamburguesa</h3>
+            <p>Precio: S/ 3.00</p>
+            <button class="Disponible">Disponible</button>
+        </div>
+
+        <div class="tarjeta"data-categoria="bebidas">
+            <img src="IMAGENES/yogurt.jpg" height="150" width="150">
+            <h3>Yogurt Fresa</h3>
+            <p>Precio: S/ 2.00</p>
+            <button class="Agotado">Agotado</button>
+        </div>
+
+        <div class="tarjeta" data-categoria="snacks">
+            <img src="IMAGENES/princesa.jpg" height="150" width="150">
+            <h3>Princesa</h3>
+            <p>Precio: S/ 2.50</p>
+            <button class="Disponible">Disponible</button>
+        </div>
+
+        <div class="tarjeta" data-categoria="snacks">
+            <img src="IMAGENES/choc.jpg" height="150" width="150">
+            <h3>Chocman</h3>
+            <p>Precio: S/ 2.50</p>
+            <button class="Disponible">Disponible</button>
+        </div>
+
+        <div class="tarjeta" data-categoria="snacks">
+            <img src="IMAGENES/dori.jpg" height="150" width="150">
+            <h3>Doritos</h3>
+            <p>Precio: S/ 2.50</p>
+            <button class="Agotado">Agotado</button>
+        </div>
+
+        <div class="tarjeta" data-categoria="snacks">
+            <img src="IMAGENES/tru.jpg" height="150" width="150">
+            <h3>Trululu</h3>
+            <p>Precio: S/ 2.50</p>
+            <button class="Disponible">Disponible</button>
+        </div>
+
+        <div class="tarjeta" data-categoria="bebidas">
+            <img src="IMAGENES/hey fit.jpg" height="150" width="150">
+            <h3>Hey Fit</h3>
+            <p>Precio: S/ 2.50</p>
+            <button class="Disponible">Disponible</button>
+        </div>
+
+        <div class="tarjeta" data-categoria="alimentos">
+            <img src="IMAGENES/alfajor,jpg.jpg" height="150" width="150">
+            <h3>Alfajor</h3>
+            <p>Precio: S/ 1.00</p>
+            <button class="Disponible">Disponible</button>
+        </div>
+        <div class="tarjeta" data-categoria="alimentos">
+            <img src="IMAGENES/quequechocolate.jpg" height="150" width="150">
+            <h3>Queque Chocolate</h3>
+            <p>Precio: S/ 2.50</p>
+            <button class="Disponible">Disponible</button>
+        </div>
+        <div class="tarjeta" data-categoria="alimentos">
+            <img src="IMAGENES/quequevainilla.jpg" height="150" width="150">
+            <h3>Queque Vainilla</h3>
+            <p>Precio: S/ 2.50</p>
+            <button class="Disponible">Disponible</button>
+        </div>
+        <div class="tarjeta" data-categoria="alimentos">
+            <img src="IMAGENES/panconpollo.jpg" height="150" width="150">
+            <h3>Pan con Pollo</h3>
+            <p>Precio: S/ 2.00</p>
+            <button class="Agotado">Agotado</button>
+        </div>
+        <div class="tarjeta" data-categoria="alimentos">
+            <img src="IMAGENES/tequeño.jpg" height="150" width="150">
+            <h3>Tequeños</h3>
+            <p>Precio: S/ 2.50</p>
+            <button class="Disponible">Disponible</button>
+        </div>
+        <div class="tarjeta" data-categoria="snacks">
+            <img src="IMAGENES/chifles.jpg" height="150" width="150">
+            <h3>Chifles</h3>
+            <p>Precio: S/ 5.50</p>
+            <button class="Disponible">Disponible</button>
+        </div>
+        <div class="tarjeta" data-categoria="snacks">
+            <img src="IMAGENES/gelatina.jpg" height="150" width="150">
+            <h3>Gelatina</h3>
+            <p>Precio: S/ 1.50</p>
+            <button class="Disponible">Disponible</button>
+        </div>
+        <div class="tarjeta" data-categoria="alimentos">
+            <img src="IMAGENES/empanada.jpg" height="150" width="150">
+            <h3>Empanadas</h3>
+            <p>Precio: S/ 2.50</p>
+            <button class="Disponible">Disponible</button>
+        </div>
+        <div class="tarjeta" data-categoria="alimentos">
+            <img src="IMAGENES/minipizza.jpg" height="150" width="150">
+            <h3>Mini Pizza</h3>
+            <p>Precio: S/ 2.50</p>
+            <button class="Disponible">Disponible</button>
+        </div>
+        <div class="tarjeta" data-categoria="alimentos">
+            <img src="IMAGENES/broaster.jpg" height="150" width="150">
+            <h3>Broaster</h3>
+            <p>Precio: S/ 10.50</p>
+            <button class="Disponible">Disponible</button>
+        </div>
+        <div class="tarjeta" data-categoria="alimentos">
+            <img src="IMAGENES/chaufa.jpg" height="150" width="150">
+            <h3>Chaufa</h3>
+            <p>Precio: S/ 8.50</p>
+            <button class="Disponible">Disponible</button>
+        </div>
+        <div class="tarjeta" data-categoria="Alimentos">
+            <img src="IMAGENES/manzana.jpg" height="150" width="150">
+            <h3>Manzana</h3>
+            <p>Precio: S/ 0.50</p>
+            <button class="Disponible">Disponible</button>
+        </div>
+        <div class="tarjeta" data-categoria="alimentos">
+            <img src="IMAGENES/brownie.jpg" height="150" width="150">
+            <h3>Brownie</h3>
+            <p>Precio: S/ 3.50</p>
+            <button class="Disponible">Disponible</button>
+        </div>
+        <div class="tarjeta" data-categoria="snacks">
+            <img src="IMAGENES/papas.jpg" height="150" width="150">
+            <h3>Papas lays</h3>
+            <p>Precio: S/ 1.50</p>
+            <button class="Disponible">Disponible</button>
+        </div>
+        <div class="tarjeta" data-categoria="snacks">
+            <img src="IMAGENES/cereal.jpg" height="150" width="150">
+            <h3>Cereal</h3>
+            <p>Precio: S/ 1.50</p>
+            <button class="Disponible">Disponible</button>
+        </div>
+        <div class="tarjeta" data-categoria="snacks">
+            <img src="IMAGENES/piqueo.jpg" height="150" width="150">
+            <h3>Piqueo</h3>
+            <p>Precio: S/ 2.50</p>
+            <button class="Disponible">Disponible</button>
+        </div>
+        <div class="tarjeta" data-categoria="bebidas">
+            <img src="IMAGENES/guara.jpg" height="150" width="150">
+            <h3>Guarana</h3>
+            <p>Precio: S/ 1.50</p>
+            <button class="Disponible">Disponible</button>
+        </div>
+        <div class="tarjeta" data-categoria="bebidas">
+            <img src="IMAGENES/krroja.jpg" height="150" width="150">
+            <h3>Kr roja</h3>
+            <p>Precio: S/ 1.50</p>
+            <button class="Disponible">Disponible</button>
+        </div>
+        <div class="tarjeta" data-categoria="bebidas">
+            <img src="IMAGENES/oro.jpg" height="150" width="150">
+            <h3>Oro</h3>
+            <p>Precio: S/ 1.50</p>
+            <button class="Disponible">Disponible</button>
+        </div>
+        </div>
+ <!-- PAGINACIÓN DEBAJO DE LOS PRODUCTOS -->
+        <div id="paginacion"></div>
+    </div>
+
+    <div class="categorias">
+
+        <h3>Categorías</h3>
+        <button onclick="mostrarTodos()">Todos los productos</button>
+        <button onclick="filtrarCategoria('alimentos')">Alimentos</button>
+        <button onclick="filtrarCategoria('bebidas')">Bebidas</button>
+        <button onclick="filtrarCategoria('snacks')">Snacks</button>
+        <button onclick="filtrarCategoria('utiles')">Útiles escolares</button>
+
+
+
+    </div>
+    <!-- PIE DE PAGINA -->
+<footer class="pie-pagina">
+    <h3>🛒 Kiosco Virtual Pitágoras</h3>
+    <p>¡Gracias por visitarnos!</p>
+    <p>Tu kiosco escolar de confianza 💚</p>
+    <small>© 2026 Kiosco Virtual Pitágoras</small>
+</footer>
+
+<script src="script.js"></script><!-- PIE DE PAGINA -->
+<footer class="pie-pagina">
+    <img src="IMAGENES/pita.jpg" height="100" width="100">
+</footer>
+</body>
+</html>
